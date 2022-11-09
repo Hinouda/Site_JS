@@ -1,0 +1,43 @@
+*{
+    margin :2;
+    padding: 2;
+}
+body{
+    background-color: black;
+    color: aqua;
+}
+
+#card{
+    border: 2px solid;
+    border-color: blue;
+    width:450px;
+    margin-top: 13px ;
+    background-color: black;
+
+}
+
+.BorderImg{
+    border: 4px inset;
+    border-color: blueviolet;
+    width:fit-content;
+    margin-top: 13px auto;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+#card ul li:hover,
+.BorderImg img:hover
+#card img:hover{
+    transform: scale(1.1);
+
+}
+
+#card ul li,
+.BorderImg img:hover
+#card img{
+    transition: transform 0.5s;
+}
