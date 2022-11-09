@@ -37,8 +37,7 @@ document.querySelector('#app').innerHTML =
             'SAO', 
             'Roubado',
             'https://cdn.myanimelist.net/images/anime/1993/93837.jpg',
-            'https://.net/anime/36474/Sword_Art_Online__Alicization?q=swor&cat=anime'
-            
+            'https://myanimelist.net/anime/36474/Sword_Art_Online__Alicization?q=swor&cat=anime'
         )}
         ${CreateAnime(
             'BangDream',
