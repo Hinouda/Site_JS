@@ -7,12 +7,32 @@ body{
     color: aqua;
 }
 
-#card{
+.cards1,.cards2,.cards3{
     border: 2px solid;
     border-color: blue;
     width:450px;
-    margin-top: 13px ;
+    margin-top: 10px ;
     background-color: black;
+
+}
+.cards1{
+    display: flex ;
+    flex-direction: column;
+    gap: 17px;
+
+}
+.cards2{
+    display: flex ;
+    flex-direction: column;
+    position: relative;
+    left: 650px;
+}
+.cards3{
+    display: flex ;
+    flex-direction: column;
+    position: relative;
+    left: 650px;
+
 
 }
 
@@ -25,19 +45,19 @@ body{
 
 #cards{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     gap: 17px;
 }
 
-#card ul li:hover,
-.BorderImg img:hover
-#card img:hover{
+.cards1 ul li:hover
+{
     transform: scale(1.1);
 
 }
 
-#card ul li,
-.BorderImg img:hover
-#card img{
+
+.card ul li
+{
     transition: transform 0.5s;
 }
