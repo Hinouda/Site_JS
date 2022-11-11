@@ -1,4 +1,5 @@
 function CreateAnime(nome, descricao, img, link){
+
     return `
 
     <a href="${link}" class="cards1" target="_blank">
@@ -7,15 +8,20 @@ function CreateAnime(nome, descricao, img, link){
         <h2><strong> ${nome} </strong></h2>
         <p>Descrição</p>
         <h4> ${descricao}</h4>
-        <div class = "BorderImg">
+        <main id = "BorderImg">
+        
             <img src = "${img}">
-        </div>
+            
+        </main>
         </li>
     </ul>
     </a>
                 
     `
 }
+
+
+
 
 document.querySelector('#app').innerHTML = 
 `
@@ -26,7 +32,7 @@ document.querySelector('#app').innerHTML =
 </style>
     
         <main id = "cards">
-       
+        
         ${CreateAnime(
             'Rakudai kishi' ,
             'Anime Prota fraco/op',
@@ -60,8 +66,35 @@ document.querySelector('#app').innerHTML =
         )}
        
         </main>
-
-
-       
-        
 `
+/*function musica(arq)
+{
+    var musicPath = new Audio("arq"); 
+}*/
+var musicPath = './song/lisa-crossing-field.mp3'
+var music = new Audio(musicPath);
+
+function mouse()
+{
+    music.play();
+    music.loop =true;
+    music.playbackRate = 1;
+    music.volume =0.1;
+}
+function mouse1()
+{
+    music.pause();
+}
+
+const items = document.querySelectorAll(".cards1")
+for (const item of items) {
+    
+    item.addEventListener("mouseover", function() {
+        mouse()
+    });
+    item.addEventListener("mouseout", function() {
+        mouse1()
+    });
+}
+
+

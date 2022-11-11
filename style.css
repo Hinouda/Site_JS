@@ -37,7 +37,7 @@ body{
 
 }
 
-.BorderImg{
+#BorderImg{
     border: 4px inset;
     border-color: blueviolet;
     width:fit-content;
@@ -58,7 +58,7 @@ body{
 }
 
 
-.card ul li
+.cards1 ul li
 {
     transition: transform 0.5s;
 }
